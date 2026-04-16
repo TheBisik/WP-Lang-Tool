@@ -1,14 +1,14 @@
-# WP Lang Tool
+# Translation Helper Tool
 
 [![WordPress Version](https://img.shields.io/badge/wordpress-%3E%3D%205.0-blue.svg)](https://wordpress.org)
 [![License](https://img.shields.io/badge/license-GPL--2.0--or--later-orange.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
 
-**WP Lang Tool** is a lightweight and efficient open-source tool for WordPress that allows for bulk installation of language packs directly from the official WordPress.org repository, without needing to change the site's global language.
+**Translation Helper Tool** is a lightweight and efficient open-source tool for WordPress that allows for bulk installation of language packs directly from the official WordPress.org repository, without needing to change the site's global language.
 
 ## 🚀 Description
 By default, WordPress only allows users to select languages that are already installed on the server. To install a new language, an administrator usually has to change the entire site's language, which forces the download of translation files.
 
-**WP Lang Tool** eliminates this problem. It allows for "quiet" installation of any number of language packs in the background. This way, your users can use their preferred languages in their profiles, and you don't have to change the global settings of your website.
+**Translation Helper Tool** eliminates this problem. It allows for "quiet" installation of any number of language packs in the background. This way, your users can use their preferred languages in their profiles, and you don't have to change the global settings of your website.
 
 ## ✨ Features
 * **Bulk Installation:** Install multiple languages at once with a single click.
@@ -27,7 +27,7 @@ By default, WordPress only allows users to select languages that are already ins
 1. Download the repository as a `.zip` file or clone it directly.
 2. Upload the `wp-lang-tool` folder to your `/wp-content/plugins/` directory.
 3. Activate the plugin via the WordPress dashboard (**Plugins** -> **Installed Plugins**).
-4. Go to **Tools** -> **WP Lang Tool** to start managing languages.
+4. Go to **Tools** -> **Translation Helper Tool** to start managing languages.
 
 ## 📖 FAQ
 **Does installing a language change my site's language?** No. The plugin only downloads and installs the translation files to the server. Your site's language remains unchanged until you manually modify it in the General Settings.
