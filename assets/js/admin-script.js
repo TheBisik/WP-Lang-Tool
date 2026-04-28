@@ -118,12 +118,12 @@ jQuery( document ).ready( function ( $ ) {
 					$row.find( '.thebisik-lpi-checkbox' ).prop( 'checked', false );
 					if ( locale !== 'en_US' && $row.find( '.thebisik-lpi-delete-btn' ).length === 0 ) {
 						$row.find( '.thebisik-lpi-actions-cell' ).html(
-							'<button type="button" class="button button-link-delete thebisik-lpi-delete-btn" data-locale="' + locale + '">Delete</button>'
+							'<button type="button" class="button button-link-delete thebisik-lpi-delete-btn" data-locale="' + locale + '">' + thebisikLpiData.textDelete + '</button>'
 						);
 					}
 				} else {
 					errorCount++;
-					$statusText.html( thebisikLpiData.textError + ': ' + ( response.data ? response.data.message : '' ) ).css( 'color', '#d63638' );
+					$statusText.text( thebisikLpiData.textError + ': ' + ( response.data ? response.data.message : '' ) ).css( 'color', '#d63638' );
 				}
 			} catch ( error ) {
 				errorCount++;

@@ -90,12 +90,13 @@ class Admin
 		$locale = isset($_POST['locale']) ? sanitize_text_field(wp_unslash($_POST['locale'])) : '';
 
 		// 4. Perform installation.
-		$result = $this->installer->install_language($locale);
+		$result  = $this->installer->install_language($locale);
+		$message = esc_html(wp_strip_all_tags((string) $result['message']));
 
 		if ($result['success']) {
-			wp_send_json_success(array('message' => $result['message']));
+			wp_send_json_success(array('message' => $message));
 		} else {
-			wp_send_json_error(array('message' => $result['message']));
+			wp_send_json_error(array('message' => $message));
 		}
 	}
 
@@ -124,11 +125,12 @@ class Admin
 
 		// 4. Perform deletion.
 		$result = $this->installer->uninstall_language($locale);
+		$message = sanitize_text_field((string) ($result['message'] ?? ''));
 
 		if ($result['success']) {
-			wp_send_json_success(array('message' => $result['message']));
+			wp_send_json_success(array('message' => $message));
 		} else {
-			wp_send_json_error(array('message' => $result['message']));
+			wp_send_json_error(array('message' => $message));
 		}
 	}
 
