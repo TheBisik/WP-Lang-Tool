@@ -1,41 +1,62 @@
-# Translation Helper Tool
+# TheBisik Language Pack Installer
 
-[![WordPress Version](https://img.shields.io/badge/wordpress-%3E%3D%205.0-blue.svg)](https://wordpress.org)
-[![License](https://img.shields.io/badge/license-GPL--2.0--or--later-orange.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
+**Contributors:** TheBisik  
+**Tags:** translation, language, upgrader, bulk install, tools  
+**Requires at least:** WordPress 5.0  
+**Tested up to:** WordPress 6.9  
+**Stable tag:** 1.0.0  
+**License:** [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)
 
-**Translation Helper Tool** is a lightweight and efficient open-source tool for WordPress that allows for bulk installation of language packs directly from the official WordPress.org repository, without needing to change the site's global language.
-
-## 🚀 Description
-By default, WordPress only allows users to select languages that are already installed on the server. To install a new language, an administrator usually has to change the entire site's language, which forces the download of translation files.
-
-**Translation Helper Tool** eliminates this problem. It allows for "quiet" installation of any number of language packs in the background. This way, your users can use their preferred languages in their profiles, and you don't have to change the global settings of your website.
-
-## ✨ Features
-* **Bulk Installation:** Install multiple languages at once with a single click.
-* **Full Language List:** Access to over 200 languages supported by WordPress.org.
-* **Intuitive Interface:** A native WordPress-style table with search functionality and status indicators (Installed/Not Installed).
-* **Package Management:** Bulk delete installed languages to free up disk space.
-* **Security:** The plugin uses the native `WordPress Upgrader` API, ensuring safe and correct file downloads.
-
-## 🛠 Minimum Requirements
-* **WordPress Version:** 5.0 or higher.
-* **PHP Version:** 7.4 or higher.
-* **Permissions:** An account with Administrator privileges (requires `install_languages` capability).
-* **Server:** Active outbound connection to `api.wordpress.org`.
-
-## 📦 Installation
-1. Download the repository as a `.zip` file or clone it directly.
-2. Upload the `wp-lang-tool` folder to your `/wp-content/plugins/` directory.
-3. Activate the plugin via the WordPress dashboard (**Plugins** -> **Installed Plugins**).
-4. Go to **Tools** -> **Translation Helper Tool** to start managing languages.
-
-## 📖 FAQ
-**Does installing a language change my site's language?** No. The plugin only downloads and installs the translation files to the server. Your site's language remains unchanged until you manually modify it in the General Settings.
-
-**Why install languages if I don't use them on the front end?** This is useful for large teams (each editor can have the dashboard in their own language) and for multilingual plugins that require `.mo`/`.po` files to be present on the server.
-
-## 📝 License
-This project is released under the GPLv2 license or later.
+> A tool for bulk installation of language packs without changing the site's global language. Completely free and open source.
 
 ---
-**Author:** [Fabian Baranski (TheBisik)](https://github.com/TheBisik)
+
+## Description
+
+By default, WordPress only allows selecting user languages that are already installed on the server or configured via the site language setting. If you want to offer different languages to your users without changing the global locale first, you'd usually have to do it manually.
+
+**TheBisik Language Pack Installer** allows WordPress administrators to bulk install any available language packs directly from the official WordPress.org repository. It does this quietly in the background without affecting your front end or triggering unnecessary locale changes.
+
+It simply pulls exactly the language packs you want straight from [translate.wordpress.org](https://translate.wordpress.org)!
+
+### Features
+
+- ✅ Fully open-source and free, forever. No premium versions or hidden upsells.
+- 🌐 See all 200+ available languages in a neat, native WordPress-styled table.
+- ⚡ Bulk select and install as many languages as you want simultaneously.
+- 🔍 See exactly which languages are currently installed and which ones are not.
+- 🔒 Safe and secure: utilizes native WordPress Upgrader APIs underneath for background installation without garbled text outputs.
+
+---
+
+## Installation
+
+1. Upload the entire `thebisik-language-pack-installer` folder to the `/wp-content/plugins/` directory.
+2. Activate the plugin through the **Plugins** menu in WordPress.
+3. Access the plugin via **Tools → TheBisik Language Pack Installer** in the dashboard.
+4. Select the languages you want to install, and click **"Bulk Install Selected"**.
+
+---
+
+## Frequently Asked Questions
+
+### Does this plugin change my site's language?
+
+No. It only downloads and installs the translation files so that users can select them in their personal profile settings, or so that other plugins (like multilingual plugins) can use them.
+
+### Will this plugin cost me anything?
+
+No. It has been built to be 100% free with all functionality open from the start.
+
+---
+
+## Changelog
+
+### 1.0.0
+- Initial open-source release.
+
+---
+
+## License
+
+This plugin is licensed under the [GNU General Public License v2.0 or later](http://www.gnu.org/licenses/gpl-2.0.html).
