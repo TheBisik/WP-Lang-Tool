@@ -155,9 +155,9 @@ class Installer {
 		// Refresh the update transient cache after deletion.
 		wp_clean_update_cache();
 
-		/* translators: %d: number of deleted files */
 		return array(
 			'success' => true,
+			/* translators: %d: number of deleted language files */
 			'message' => sprintf( __( 'Deleted %d language files.', 'thebisik-language-pack-installer' ), $deleted_files ),
 		);
 	}
